@@ -1,7 +1,7 @@
 """
 Definition of views.
 """
-
+from app.email import send_email
 from django.shortcuts import render
 from django.http import HttpRequest
 from django.template import RequestContext
@@ -41,6 +41,20 @@ def about(request):
         {
             'title':'About',
             'message':'Your application description page.',
+            'year':datetime.now().year,
+        }
+    )
+
+def email(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    send_email(request)
+    return render(
+        request,
+        'app/email.html',
+        {
+            'title':'Sending email...',
+            'message':'The email is sent. Check your mailbox.',
             'year':datetime.now().year,
         }
     )
