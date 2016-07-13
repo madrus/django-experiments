@@ -253,3 +253,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/DjangoExperiments/env

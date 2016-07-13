@@ -46,6 +46,7 @@
     <Compile Include="DjangoExperiments\settings.py" />
     <Compile Include="DjangoExperiments\urls.py" />
     <Compile Include="DjangoExperiments\wsgi.py" />
+    <Compile Include="ptvs_virtualenv_proxy.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
@@ -60,7 +61,9 @@
     <Folder Include="DjangoExperiments\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="act.cmd" />
     <Content Include="app\templates\app\email.html" />
+    <Content Include="deact.cmd" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
@@ -91,6 +94,7 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="run.cmd" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.mht">
